@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TableTags</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      /* Отображать двойные линии как одинарные */
+    }
+
+    th {
+      background: #ccc;
+      /* Цвет фона */
+      text-align: left;
+      /* Выравнивание по левому краю */
+    }
+
+    td,
+    th {
+      border: 1px solid #800;
+      /* Параметры границы */
+      padding: 4px;
+      /* Поля в ячейках */
+    }
+  </style>
+</head>
+
+<body>
+  <a href="Home.html" class="exit">GO BACK</a>
+  <main>
+
+    <!-- #18 Создаем заголовок таблицы -->
+    <article>
+      <h2>#18 Создаем заголовок таблицы</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="4">
+        <caption>Таблица 3.2. Демонстрация катаболических
+          процессов организма</caption>
+        <tr>
+          <th>&nbsp;</th>
+          <th>Чебурашка</th>
+          <th>Крокодил Гена</th>
+          <th>Шапокляк</th>
+        </tr>
+        <tr>
+          <td>Съел, кг</td>
+          <td>5</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Выпил, л</td>
+          <td>6</td>
+          <td>8</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Смог, раз</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </article>
+
+    <!-- #20 Определяем свойство каждой колонки через элементы группировки колонок -->
+    <article>
+      <h2>#20 Определяем стили каждой колонки через элементы группировки колонок</h2>
+      <table>
+        <colgroup style="background: #35aa35;">
+          <col style="background: #80A3FB;">
+          <col span="2">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>Ячейка 1</td>
+            <td>Ячейка 2</td>
+            <td>Ячейка 3</td>
+            <td>Ячейка 4</td>
+          </tr>
+          <tr>
+            <td>Ячейка 5</td>
+            <td>Ячейка 6</td>
+            <td>Ячейка 7</td>
+            <td>Ячейка 8</td>
+          </tr>
+          <tr>
+            <td>Ячейка 9</td>
+            <td>Ячейка 10</td>
+            <td>Ячейка 11</td>
+            <td>Ячейка 12</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <hr>
+
+    <!-- #85 Создаем таблицу -->
+    <article>
+      <h2>#85 Создаем таблицу</h2>
+      <table border="1">
+        <tr>
+          <th>Student code </th>
+          <th>% of marks </th>
+        </tr>
+        <tr>
+          <td>S001</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>S002</td>
+          <td>86</td>
+        </tr>
+        <tr>
+          <td>S003</td>
+          <td>72</td>
+        </tr>
+        <tr>
+          <td>S004</td>
+          <td>89</td>
+        </tr>
+      </table>
+    </article>
+    <hr>
+
+    <!-- #86 Группируем элементы внутри таблицы -->
+    <article>
+      <h2>#86 Группируем элементы внутри таблицы (строка, ячейка)</h2>
+      <table width="600" border="1">
+        <tbody align="right">
+          <tr>
+            <td>Ячейка 1</td>
+            <td>Ячейка 2</td>
+          </tr>
+          <tr>
+            <td>Ячейка 3</td>
+            <td>Ячейка 4</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <hr>
+
+    <!-- #87 Определяем ячейки в таблице -->
+    <article>
+      <h2>#87 Определяем ячейки в таблице</h2>
+      <table border="1">
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>PHP</td>
+          <td>Server side scripting</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Client side scripting</td>
+        </tr>
+      </table>
+    </article>
+    <hr>
+
+    <!-- #89 Определяем подвал таблицы -->
+    <article>
+      <h2>#89 Определяем подвал таблицы</h2>
+      <table width="600">
+        <tfoot align="center" style="background: #ffc">
+          <tr>
+            <td>Ячейка 1, расположенная в TFOOT</td>
+            <td>Ячейка 2, расположенная в TFOOT</td>
+          </tr>
+        </tfoot>
+
+        <tbody align="right" style="background: silver">
+          <tr>
+            <td>Ячейка 3, расположенная в TBODY</td>
+            <td>Ячейка 4, расположенная в TBODY</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <hr>
+
+    <!-- #90 Создаем ячейку таблицы, которая обозначается как заголовочная <th> -->
+    <article>
+      <h2>#90 Создаем ячейку таблицы, которая обозначается как заголовочная</h2>
+      <table>
+        <caption style="caption-side: bottom; padding: 10px;">Alien football stars</caption>
+        <tr>
+          <th scope="col">Player</th>
+          <th scope="col">Gloobles</th>
+          <th scope="col">Za'taak</th>
+        </tr>
+        <tr>
+          <th scope="row">TR-7</th>
+          <td>7</td>
+          <td>4,569</td>
+        </tr>
+        <tr>
+          <th scope="row">Khiresh Odo</th>
+          <td>7</td>
+          <td>7,223</td>
+        </tr>
+        <tr>
+          <th scope="row">Mia Oolong</th>
+          <td>9</td>
+          <td>6,219</td>
+        </tr>
+      </table>
+    </article>
+    <hr>
+
+    <!-- #91 Определяем шапку таблицы <thead> -->
+    <article>
+      <h2>#91 Определяем шапку таблицы</h2>
+      <table width="600">
+        <tfoot align="center" style="background: #ffc">
+          <tr>
+            <td>Ячейка 1, расположенная в TFOOT</td>
+            <td>Ячейка 2, расположенная в TFOOT</td>
+          </tr>
+        </tfoot>
+
+        <tbody align="right" style="background: silver">
+          <tr>
+            <td>Ячейка 3, расположенная в TBODY</td>
+            <td>Ячейка 4, расположенная в TBODY</td>
+          </tr>
+        </tbody>
+        <thead align="right" style="background: #b87333 ">
+          <tr>
+            <td>Ячейка 5, расположенная в THEAD</td>
+            <td>Ячейка 6, расположенная в THEAD</td>
+          </tr>
+        </thead>
+      </table>
+    </article>
+    <hr>
+
+    <!-- #93 Определяем строку таблицы -->
+    <article>
+      <h2>#93 Определяем строку таблицы</h2>
+      <!--начало содержимого таблицы-->
+      <table border="1">
+        <!-- наименование таблицы-->
+        <caption>Элементарная таблица</caption>
+        <!--описываем первую строку-->
+        <tr>
+          <th>Ячейка заголовка 1</th>
+          <th>Ячейка заголовка 2</th>
+          <th>Ячейка заголовка 3</th>
+        </tr>
+        <!--описываем вторую строку-->
+        <tr>
+          <td>Ячейка данных 1 Строка 2</td>
+          <td>Ячейка данных 2 Строка 2</td>
+          <td>Ячейка данных 3 Строка 2</td>
+        </tr>
+        <!-- описываем третью строку-->
+        <tr>
+          <td>Ячейка данных 1 Строка 3</td>
+          <td>Ячейка данных 2 Строка 3</td>
+          <td>Ячейка данных 3 Строка 3</td>
+        </tr>
+      </table>
+      <!-- конец таблицы -->
+    </article>
+    <hr>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TextTags</title>
+  <style>
+    kbd { font-weight: bold; }
+    mark { background: #ffec82; padding: 0 3px; border: 1px dashed #333; }
+    q { font-family: Times, serif; font-style: italic; color: #008; }
+    span.ingredient { color: #f00; }
+    .word { font-size: 22px; }
+    wbr { display: inline-block; }
+  </style>
+</head>
+
+<body>
+  <a href="Home.html" class="exit">GO BACK</a>
+  <main>
+
+    <!-- #3 Создаем аббревиатуру -->
+    <article>
+      <h2>#3 Создаем аббревиатуру</h2>
+      <p>
+        <abbr style="color: red" title="Uniform Resource Locator">URL</abbr> stand for Uniform Resource Locator
+      </p>
+    </article>
+    <hr>
+
+    <!-- #9 Устанавливаем жирное начертание шрифта -->
+    <article>
+      <h2>#9 Устанавливаем жирное начертание шрифта</h2>
+      <p>"w3resource" is normal text - and <b>"w3resource"</b> is bold text </p>
+    </article>
+    <hr>
+
+    <!-- #13 Задаем элемент цитирования для текста -->
+    <article>
+      <h2>#13 Задаем элемент цитирования для текста</h2>
+      <blockquote cite="https://www.huxley.net/bnw/four.html">
+        <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.
+        </p>
+        <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+      </blockquote>
+    </article>
+    <hr>
+
+    <!-- #15 Переносим строку на новый ряд -->
+    <article>
+      <h2>#15 Переносим строку на новый ряд</h2>
+      <p>The quick brown fox jumps<br>over the lazy dog.</p>
+    </article>
+    <hr>
+
+    <!-- #21 Вставляем текст в виде программного кода -->
+    <article>
+      <h2>#21 Вставляем текст в виде программного кода</h2>
+      <p>This following text is computer code:</p>
+      <pre>
+          <code>
+            function checkParent (src, dest) {
+              while (src != null) {
+                if (src.tagName == dest) return src
+                  src = src.parentElement
+                }
+              return null
+            }
+          </code>
+        </pre>
+    </article>
+    <hr>
+
+    <!-- #24 Выделяем фрагмент текста, который был удален в новой версии документа -->
+    <article>
+      <h2>#24 Выделяем фрагмент текста, который был удален в новой версии документа</h2>
+      <p>Заметим, что схожий результат с Netscape показывает и браузер Opera, но, как видно на рис. 1, в последующих
+        версиях <del style="color: red">этот недостаток был устранен</del><ins> подход разработчиков этого браузера был
+          изменен</ins>.</p>
+    </article>
+    <hr>
+
+    <!-- #25 Указываем дополнительные сведения которые можно скрыть/показать -->
+    <article>
+      <h2>#25 Указываем дополнительные сведения которые можно скрыть/показать</h2>
+      <details>
+        <summary>PHP is a server side scripting language</summary>
+        <p>PHP is a general-purpose server-side scripting language originally designed for web development to produce
+          dynamic web
+          pages. For this purpose, PHP code is embedded into the HTML source document and interpreted by a web server
+          with a PHP
+          processor module, which generates the web page document.</p>
+      </details>
+    </article>
+    <hr>
+
+    <!-- #38 Создаем заголовки документа h1-h6 -->
+    <article>
+      <h2>#38 Создаем заголовки документа h1-h6</h2>
+      <h1>This is H1</h1>
+      <h2>This is H2</h2>
+      <h3>This is H3</h3>
+      <h4>This is H4</h4>
+      <h5>This is H5</h5>
+      <h6>This is H6</h6>
+    </article>
+    <hr>
+
+    <!-- #43 Устанавливаем курсивное начертание шрифта -->
+    <article>
+      <h2>#43 Устанавливаем курсивное начертание шрифта</h2>
+      <i>W3resource</i> is very informative and easy to learn tutorial for the beginners</p>
+    </article>
+    <hr>
+
+    <!-- #47 Добавляем элемент подчеркивания текста <ins> -->
+    <article>
+      <h2>#47 Добавляем элемент подчеркивания текста</h2>
+      <p>Заметим, что схожий результат с Netscape показывает и браузер Opera, но, как видно на рис. 1, в последующих
+        версиях <del style="color: red">этот недостаток был устранен</del><ins datetime="2014-02-20T10:30:03Z"
+          cite="i-answer.html"> подход разработчиков этого браузера был изменен</ins>.</p>
+    </article>
+    <hr>
+
+    <!-- #48 Вставляем текст для обозначения названий клавиш -->
+    <article>
+      <h2>#48 Вставляем текст для обозначения названий клавиш</h2>
+      <p>Для быстрого закрашивания выделенной области цветом переднего плана
+        используйте комбинацию клавиш <kbd>&lt;Alt&gt;+&lt;Backspace&gt;</kbd>
+        или <kbd>&lt;Alt&gt;+&lt;Delete&gt;</kbd>.
+        Для закрашивания выделенной области фоновым цветом
+        воспользуйтесь комбинацией
+        <kbd>&lt;Ctrl&gt;+&lt;Backspace&gt;</kbd> или
+        <kbd>&lt;Ctrl&gt;+&lt;Delete&gt;</kbd>.</p>
+    </article>
+    <hr>
+
+    <!-- #56 Помечаем текст как выделенный -->
+    <article>
+      <h2>#56 Помечаем текст как выделенный</h2>
+      <p>
+        История о том, как возле столовой появились загадочные розовые
+        следы с <mark>шестью пальцами</mark>, и почему это случилось.
+      </p>
+    </article>
+    <hr>
+
+    <!-- #67 Определяем параграф -->
+    <article>
+      <h2>#67 Определяем параграф</h2>
+      <p>This is an HTML paragraph.</p>
+    </article>
+    <hr>
+
+    <!-- #69 Определяем блок предварительно отформатированного текста  -->
+    <article>
+      <h2>#69 Определяем блок предварительно отформатированного текста(все табы, пробелы и переносы сохраняются)</h2>
+      <pre>
+        -                -----  
+        -----           |-----
+       ||----|          ----||  
+       ||-----         -----||  
+       ||-----|       |-----||
+       || -----       ------||
+       ||- ----|     |------||
+       ||---||--     -------||
+       ||--|| --|   |-------||
+       || -|| |--   --- - --||
+       || -||  --|-|--| - ---|
+       |---||  |-----| |-----|
+       |---||   |----  |-----| 
+       |----|    ---   |-----|
+       |-----          ------| 
+      </pre>
+    </article>
+    <hr>
+
+    <!-- #71 Выделяем в тексте цитаты  -->
+    <article>
+      <h2>#71 Выделяем в тексте цитаты</h2>
+      <p>Станислав Лец утверждал: <q>Чаще всего выход там, где был вход</q>.</p>
+    </article>
+    <hr>
+
+    <!-- #72 Задаем текст, который больше не является актуальным -->
+    <article>
+      <h2>#72 Задаем текст, который больше не является актуальным</h2>
+      <p><s>Present version of HTML is HTML 4.01.</s></p>
+    </article>
+    <hr>
+
+    <!-- #77 Уменьшаем размер шрифта на единицу по сравнению с обычным текстом -->
+    <article>
+      <h2>#77 Уменьшаем размер шрифта на единицу по сравнению с обычным текстом</h2>
+      <p>w3resource is a free, open-source tutorial.</p>
+      <p><small>you will learn with HTML5 tutorial of w3resource.</small></p>
+    </article>
+    <hr>
+
+    <!-- #79 Создаем обертку для фрагмента текста -->
+    <article>
+      <h2>#79 Создаем обертку для фрагмента текста</h2>
+      <p>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span
+          class="ingredient">garlic</span> to a blender and blend into a paste.</p>
+      <p>Gradually add the <span class="ingredient">olive oil</span> while running the blender slowly.</p>
+    </article>
+    <hr>
+
+    <!-- #80 Выделяем важный текст (отображается жирным начертанием) -->
+    <article>
+      <h2>#80 Выделяем важный текст (отображается жирным начертанием)</h2>
+      <strong>We are learning HTML strong element.</strong>
+    </article>
+    <hr>
+
+    <!-- #82 Шрифт в нижнем индексе -->
+    <article>
+      <h2>#82 Шрифт в нижнем индексе</h2>
+      <p>This text is<sub>subscript</sub> text.example- H<sub>2</sub>O </p>
+    </article>
+    <hr>
+
+    <!-- #83 Определяем видимый заголовок для элемента -->
+    <article>
+      <h2>#83 Определяем видимый заголовок для элемента details</h2>
+      <details>
+        <summary>w3resource</summary>
+        <p> - w3resource is a free, open-source tutorial.</p>
+        <p>you will learn with HTML5 tutorial of w3resource</p>
+      </details>
+    </article>
+    <hr>
+
+    <!-- #84 Шрифт в верхнем индексе -->
+    <article>
+      <h2>#84 Шрифт в верхнем индексе</h2>
+      <p>This text is<sup> superscript</sup> text. example- a<sup>2</sup>+b<sup>2</sup></p>
+    </article>
+    <hr>
+
+    <!-- #94 Добавляем подчеркивание для текста -->
+    <article>
+      <h2>#94 Добавляем подчеркивание для текста</h2>
+      <p>HTML,stands for <u>Hyper Text Markup Language </u></p>
+    </article>
+    <hr>
+
+    <!-- #98 Указываем браузеру место, где допускается делать перенос строки в тексте -->
+    <article>
+      <h2>#98 Указываем браузеру место, где допускается делать перенос строки в тексте</h2>
+      <p class="word">метоксихлор<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин</p>
+    </article>
+    <hr>
+
+  </main>
+</body>
+
+</html>

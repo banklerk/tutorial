@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ListTags</title>
+</head>
+
+<body>
+  <a href="Home.html" class="exit">GO BACK</a>
+  <main>
+    <!-- #22 Создаем список вариантов, которые можно выбирать при наборе в текстовом поле -->
+    <article>
+      <h2>#22 Создаем список вариантов, которые можно выбирать при наборе в текстовом поле</h2>
+      <form>
+        <p><input list="cocktail"></p>
+        <datalist id="cocktail">
+          <option>Аперитивы</option>
+          <option>Горячие</option>
+          <option>Десертные</option>
+          <option>Диджестивы</option>
+          <option>Молочные</option>
+          <option>Слоистые</option>
+        </datalist>
+      </form>
+    </article>
+    <hr>
+
+    <!-- #52 Создаем HTML-списки -->
+    <article>
+      <h2>#52 Создаем HTML-списки</h2>
+      <p>An ordered list:</p>
+      <ol>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>PHP</li>
+      </ol>
+      <p>An unordered list:</p>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>PHP</li>
+      </ul>
+    </article>
+    <hr>
+
+    <!-- #63 Создаем нумерованный список (+ вопросы) -->
+    <article>
+      <h2>#63 Создаем нумерованный список (+ вопросы)</h2>
+      <ol type="I" start="10" reversed>
+        <li>Monitor</li>
+        <li>Keyboard</li>
+        <li>Mouse</li>
+        <li>Printer</li>
+      </ol>
+    </article>
+    <hr>
+
+    <!-- #64 Объединяем элементы выпадающего списка optgroup (+ вопросы) -->
+    <article>
+      <h2>#64 Объединяем элементы выпадающего списка optgroup (+ вопросы)</h2>
+      <select>
+        <optgroup label="Computer
+  Monitors">
+          <option value="crt">CRT</option>
+          <option value="lcd">LCD</option>
+          <option value="led">LED</option>
+        </optgroup>
+        <optgroup label="Computer
+  Printers" disabled>
+          <option value="dot-matrix">Dot-
+            Matrix</option>
+          <option value="ink-jet">Ink-
+            jet</option>
+          <option value="laser">Laser</option>
+        </optgroup>
+      </select>
+    </article>
+    <hr>
+
+    <!-- #65 Создаем элемент раскрывающегося списка -->
+    <article>
+      <h2>#65 Создаем элемент раскрывающегося списка</h2>
+      <select>
+        <option value="php">PHP</option>
+        <option value="asp">ASP</option>
+        <option value="ruby">Ruby on Rails
+        </option>
+      </select>
+    </article>
+    <hr>
+
+    <!-- #76 Создаем выпадающий список (+ вопросы) -->
+    <article>
+      <h2>#76 Создаем выпадающий список (+ вопросы)</h2>
+      <form name="example" action="html-select-
+  option-optgroup-example.html">
+        Select one or more sections:
+        <select size="2" name="languages" autofocus required>
+          <optgroup label="Server_side">
+            <option disabled>PHP</option>
+            <option>ASP</option>
+            <option>Ruby on Rails </option>
+          </optgroup>
+          <optgroup label="Client_side">
+            <option>JavaScript</option>
+            <option>VB Script </option>
+          </optgroup>
+        </select>
+      </form>
+    </article>
+    <hr>
+
+    <!-- #95 Создаем маркированный список -->
+    <article>
+      <h2>#95 Создаем маркированный список</h2>
+      <ul>
+        <li>Tutorials</li>
+        <li>Online Practice Editor </li>
+        <li>Examples</li>
+        <li>References</li>
+        <li>Videos</li>
+      </ul>
+    </article>
+    <hr>
+  </main>
+
+</body>
+
+</html>

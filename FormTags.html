@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormTags</title>
+</head>
+
+<body>
+  <a href="Home.html" class="exit">GO BACK</a>
+  <main>
+    <!-- #16 Создаем кликабельную кнопку (+ вопросы) -->
+    <article>
+      <h2>#16 Создаем кликабельную кнопку (+ вопросы)</h2>
+      <button type="button" onclick="console.log('Welcome Friends')">Click Me!</button>
+    </article>
+    <hr>
+
+    <!-- #16.1 Создаем кнопку с автофокусом при загрузке -->
+    <article>
+      <h2>#16.1 Создаем кнопку с автофокусом при загрузке</h2>
+      <form>
+        <fieldset>
+          <p>Нажимая кнопку Далее, вы соглашаетесь со всеми условиями
+            Лицензионного соглашения, как явными, так и указанными
+            в неявной форме.</p>
+          <p><button autofocus value="next">Далее</button></p>
+        </fieldset>
+      </form>
+    </article>
+    <hr>
+
+    <!-- #16.2 Указываем форму к которой принадлежит кнопка -->
+    <article>
+      <h2>#16.2 Указываем форму к которой принадлежит кнопка</h2>
+      <form method="POST"
+        action="https://www.w3resource.com/html-css-exercise/basic/solution/button-form-answer-demo.php" id="form1">
+        First name : <input type="text" name="fname"><br>
+        Last name : <input type="text" name="lname"><br>
+        E-mail : <input type="text" name="mail"><br>
+      </form>
+      <button type="submit" name="topic" form="form1" formmethod="post" formaction="URL" value="Submit" formnovalidate
+        formtarget="_blank">Submit</button>
+    </article>
+    <hr>
+
+
+    <!-- ##33 Группируем элементы формы fieldset -->
+    <article>
+      <h2>##33 Группируем элементы формы fieldset</h2>
+      <form>
+        <fieldset>
+          Name: <input type="text" size="30" /><br><br>
+          Email: <input type="text" size="30" /><br><br>
+        </fieldset>
+      </form>
+    </article>
+    <hr>
+
+    <!-- #37 Создаем форму для ввода данных form -->
+    <article>
+      <h2>#37 Создаем форму для ввода данных form</h2>
+      <form action="https://www.w3resource.com/html-css-exercise/basic/solution/form-answer-demo.php" method="post">
+        Name: <input type="text" name="name"><br>
+        Email: <input type="text" name="email"><br>
+        <input type="submit" value="Submit" />
+      </form>
+    </article>
+    <hr>
+
+    <!-- #46 Создаем элемент управления в веб-формах input (+ вопросы) -->
+    <article>
+      <h2>#46 Создаем элемент управления в веб-формах input (+ вопросы)</h2>
+      <form name="example_ form" method="POST" action="input-answer-
+  demo.php">
+        Name: <input type="text" name="name" size="30"> <br>
+        Email: <input type="text" name="email" size="30"> <br>
+        <input type="file" name="my_image" accept="image/*"><br>
+        <input type="submit" value="Submit">
+      </form>
+    </article>
+    <hr>
+
+    <!-- #50 Создаем метку для элемента формы label (+ вопросы) -->
+    <article>
+      <h2>#50 Создаем метку для элемента формы label (+ вопросы)</h2>
+      <form method="post" action="https://www.w3resource.com/html-
+  css-exercise/basic/solution/label-
+  answer-demo.php">
+        <label for="yes">Yes</label>
+        <input type="radio" name="answer" value="yes" checked><br>
+        <label for="no">No</label>
+        <input type="radio" name="answer" value="no"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </article>
+    <hr>
+
+    <!-- #50.1 Указываем форму к которой принадлежит метка -->
+    <article>
+      <h2>#50.1 Указываем форму к которой принадлежит метка</h2>
+      <form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/label-answer-demo.php"
+        id="form1">
+        <input type="radio" name="answer" value="yes" checked><br>
+        <label for="no">No</label>
+        <input type="radio" name="answer" value="no"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <label for="yes" form="form1">Yes</label>
+    </article>
+    <hr>
+
+    <!-- #51 Определяем заголовок содержания родительского элемента fieldset -->
+    <article>
+      <h2>#51 Определяем заголовок содержания родительского элемента fieldset</h2>
+      <fieldset>
+        <legend>Работа со временем</legend>
+        <p><input type="checkbox"> создание пунктуальности (никогда не
+          будете никуда опаздывать);<Br>
+          <input type="checkbox"> излечение от пунктуальности (никогда
+          никуда не будете торопиться);<Br>
+          <input type="checkbox"> изменение восприятия времени и часов.</p>
+      </fieldset>
+    </article>
+    <hr>
+
+    <!-- #66 Задаем результат вычислений формы (+ вопросы) -->
+    <article>
+      <!-- В HTML5 представлено свойство JavaScript valueAsNumber для полей формы (в частности: number, date, range). Оно возвращает значение в виде числа, а не строки, то есть нам больше не нужно использовать parseInt или parseFloat, и оператор + складывает, а не склеивает -->
+      <h2>#66 Задаем результат вычислений формы (+ вопросы)</h2>
+      <form onsubmit="return false" oninput="o.value = a.valueAsNumber + b.valueAsNumber">
+        <input name="a" id="a" type="number" step="any"> +
+        <input name="b" id="b" type="number" step="any"> =
+        <output name="o" for="a b"></output>
+      </form>
+    </article>
+    <hr>
+
+    <!-- #88 Создаем элемент - область текста (textarea) -->
+    <article>
+      <h2>#88 Создаем элемент - область текста (textarea)</h2>
+      <form action="textarea1.php" method="post">
+        <p><b>Введите ваш отзыв:</b></p>
+        <p><textarea rows="10" cols="45" name="text"></textarea></p>
+        <p><input type="submit" value="Отправить"></p>
+      </form>
+    </article>
+    <hr>
+  </main>
+
+
+</body>
+
+</html>

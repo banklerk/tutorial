@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkTags</title>
+  <!-- <base href="https://www.w3resource.com/"> -->
+  <style>
+    #FirstCanvas {
+      width: 500px;
+      height: 300px;
+      border: 3px solid red;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="Home.html" class="exit">GO BACK</a>
+  <main>
+    <!-- #2 Создание гиперссылки (+ вопросы) -->
+    <article>
+      <h2>#2 Создание гиперссылки (+ вопросы)</h2>
+      <p><a href="http://example.com">example.com</a>
+      <p>
+    </article>
+    <hr>
+
+    <!-- ##5 Выделяем области на image-map (+ вопросы) -->
+    <article>
+      <h2>##5 Выделяем области на image-map (+ вопросы)</h2>
+      <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+      <img src="https://www.w3schools.com/tags/workplace.jpg" alt="Workplace" usemap="#workmap" width="400"
+        height="379">
+
+      <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+      </map>
+    </article>
+    <hr>
+
+    <!-- ##8 Встраиваем аудио файл в HTML документ (+ вопросы) -->
+    <article>
+      <h2>##8 Встраиваем аудио файл в HTML документ (+ вопросы)</h2>
+      <audio controls="controls" preload="auto" autoplay loop>
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.ogg" type="audio/ogg">
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg">
+      </audio>
+    </article>
+    <hr>
+
+    <!-- #10 Задаем основной URL адрес для всех относительных в документе -->
+    <article>
+      <h2>#10 Задаем основной URL адрес для всех относительных в документе</h2>
+      <ul>
+        <li><a href="php/php-home.php">PHP Tutorial</a></li>
+        <li><a href="javascript/javascript.php">JavaScript Tutorial</a></li>
+        <li><a href="mysql/mysql-tutorials.php">MySQL Tutorial</a></li>
+      </ul>
+    </article>
+    <hr>
+
+    <!-- #17 Рисуем на canvas (+ вопросы) -->
+    <article>
+      <h2>#17 Рисуем на canvas (+ вопросы)</h2>
+      <canvas id="FirstCanvas"></canvas>
+    </article>
+    <hr>
+
+    <!-- #27 Создаем диалоговое/модальное окно -->
+    <article>
+      <h2>#27 Создаем диалоговое/модальное окно</h2>
+      <h1>The dialog element</h1>
+      <p>This is some text.</p>
+      <p>This is some text.</p>
+      <dialog open>This is an open dialog window</dialog>
+      <p>This is some text.</p>
+      <p>This is some text.</p>
+      <p><b>Note:</b> The dialog tag is not supported in Safari and Edge (prior version 79).</p>
+    </article>
+    <hr>
+
+    <!-- #34 Создаем элемент заголовка иллюстрации -->
+    <article>
+      <h2>#34 Создаем элемент заголовка иллюстрации (figcaption)</h2>
+      <figure>
+        <img src="https://www.w3resource.com/images/w3logo6.png" alt="w3resource Logo" width="149" height="52" />
+        <figcaption>Official Logo of w3resource.com</figcaption>
+      </figure>
+    </article>
+    <hr>
+
+    <!-- #45 Встраиваем изображение в документ img (+ вопросы) -->
+    <article>
+      <h2>#45 Встраиваем изображение в документ img (+ вопросы)</h2>
+      <p><img src="https://www.w3resource.com/images/layout.gif"></p>
+    </article>
+    <hr>
+
+    <!-- ##55 Задаем изображение как image-map на клиентской стороне -->
+    <article>
+      <h2>##55 Задаем изображение как image-map</h2>
+      <img src="https://www.w3resource.com/w3r_images/html-area-element.png" alt="area example" width="308" height="190"
+        border="0" usemap="#Map">
+      <map name="Map">
+        <area shape="rect" coords="8,5,100,77" href="https://www.w3resource.com/mysql/mysql-tutorials.php"
+          target="_blank" alt="mysql tutorial">
+        <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank"
+          alt="php tutorial">
+        <area shape="rect" coords="197,136,306,188" href="https://www.w3resource.com/sql/sql-tutorials.php"
+          alt="sql tutorials">
+      </map>
+    </article>
+    <hr>
+
+    <!-- #59 Отображем числовые значения в виде диапазона (+ вопросы) -->
+    <article>
+      <h2>#59 Отображем числовые значения в виде диапазона</p>
+        <p>The meter element is used to display a gauge:</p>
+        <label for="disk_c">Disk usage C:</label>
+        <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+        <label for="disk_d">Disk usage D:</label>
+        <meter id="disk_d" value="0.6">60%</meter>
+        <p><strong>Note:</strong> The meter tag is not supported in Edge 12 (or earlier).</p>
+    </article>
+    <hr>
+
+    <!-- #68 Задаем значения параметров объектам веб-страницы -->
+    <article>
+      <h2>#68 Задаем значения параметров объектам веб-страницы</h2>
+      <p>Речь Стива Джобса перед выпускниками Стенфорда</p>
+      <object width="320" height="240" data="https://www.youtube.com/embed/bZNEB_o3Hzw?ecver=2" <param name="autoplay"
+        value="true">
+      </object>
+    </article>
+    <hr>
+
+    <!-- #70 Отображаем прогресс бар завершенности задачи -->
+    <article>
+      <h2>#70 Отображаем прогресс бар завершенности задачи</h2>
+      <p>Пожалуйста, подождите, фотографии загружаются.</p>
+      <progress max="100" value="25">
+        Загружено на <span id="value">25</span>%
+      </progress>
+    </article>
+    <hr>
+
+    <!-- #78 Добавляем несколько source для медиа элементов -->
+    <article>
+      <h2>#78 Добавляем несколько источинков для медиа элементов</h2>
+      <audio controls>
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.ogg" type="audio/ogg">
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg">
+      </audio>
+    </article>
+    <hr>
+
+    <!-- #97 Встраиваем видео контент в документ video (+ вопросы) -->
+    <article>
+      <h2>#97 Встраиваем видео контент в документ video (+ вопросы)</h2>
+      <video width="320" height="200" preload="auto" controls muted>
+        <source src="http://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+        <source src="http://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">
+      </video>
+    </article>
+    <hr>
+
+    <!-- #44 Встраиваем другой контент с помощью iframe (+ вопросы) -->
+    <article>
+      <h2>#44 Встраиваем другой контент с помощью iframe (+ вопросы)</h2>
+      <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+      </iframe>
+    </article>
+    <hr>
+  </main>
+
+</body>
+
+</html>
